@@ -1,0 +1,286 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  background: rgba(237,237,237,1);
+  background: -moz-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(237,237,237,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+  background: -webkit-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: -o-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: -ms-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: linear-gradient(to right, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ededed', GradientType=1 );
+}
+
+.navbar.eks-flat-corner {
+	border-radius: 0px;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #3f3f3f;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+	color: #bcb811;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+	color: #bcb811;
+	cursor: default;
+	background-color: transparent;
+	border: none;
+	border-bottom-color: transparent;
+}
+
+.header .navbar-brand {
+    margin-top: 5px;
+}
+
+@media only screen and (max-width : 480px) {
+    .header .navbar-brand{
+        margin-top: 15px;
+        padding: 5px;
+    }
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    height: 67px;
+    z-index: 4;
+}
+
+.side-nav{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #353638;
+    background: -webkit-linear-gradient(left, #353638, #3f434b); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #353638, #3f434b); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #353638, #3f434b); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #353638, #3f434b); /* Standard syntax */
+    z-index: 3;
+    padding-top: 67px;
+    display: none;
+}
+
+.side-nav.visible{
+    display: block;
+}
+
+.side-nav ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.side-nav ul li{
+    padding: 10px 10px;
+}
+
+.side-nav ul .sub-menu li:before,
+.side-nav li .sub-menu li:before {
+  font-family: FontAwesome;
+  content: "\f105";
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+  color: #8b91a0
+}
+
+.side-nav ul li a{
+    text-decoration: none;
+    color: #8b91a0
+}
+
+.eks-img-logo{
+    display: inline;
+}
+.eks-brand{
+    float: none;
+}
+
+.eks-header{
+    text-align: center;
+}
+
+.main-content{
+    padding-top: 67px;
+    overflow-x: hidden;
+}
+
+.eks-dashboard{
+    margin: 10px;
+    background: #ffffff;
+    padding-bottom: 10px;
+}
+
+.nav-trigger{
+    padding: 15px;
+    margin-top: 10px;
+}
+/* set element styles to fit tablet and higher(desktop) */
+/*@media only screen and (min-width : 600px){
+    .side-nav{
+        width: 80px;
+        display: block;
+    }
+    .nav-trigger{
+        display: none;
+    }
+    .side-nav ul li{
+        text-align: center;
+    }
+    .side-nav ul li span:nth-child(2){
+        display: none;
+    }
+    .side-nav ul li i{
+        font-size: 26px;  
+    }
+    .main-content{
+        margin-left: 80px;
+    }
+    .eks-img-logo{
+        float: left;
+        display: block;
+    }
+    .eks-brand{
+        float: left;
+    }
+    .eks-header{
+        text-align: inherit;
+    }
+}*/
+/* set element styles for desktop */
+@media only screen and (min-width : 600px){
+    .side-nav{
+        width: 200px;
+        display: block;
+    }
+    .nav-trigger{
+        display: none;
+    }
+    .side-nav ul li{
+        text-align: left;
+    }
+    .side-nav ul li span:nth-child(2){
+        display: inline;
+    }
+    .side-nav ul li i{
+        font-size: 16px
+    }
+    .main-content{
+        margin-left: 200px;
+    }
+    .eks-dashboard{
+        margin: 20px;
+    }
+    .eks-img-logo{
+        float: left;
+        display: block;
+    }
+    .eks-brand{
+        float: left;
+    }
+    .eks-header{
+        text-align: inherit;
+    }
+}
+
+.side-nav ul :not(collapsed) .arrow:before,
+.side-nav li :not(collapsed) .arrow:before {
+  font-family: FontAwesome;
+  content: "\f078";
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+  float: right;
+}
+
+.eks-label{
+    color: #bcb811;
+}
+
+#tblCustomer tbody tr td a{
+    padding-right: 5px;
+}
+#tblLeads tbody tr td a{
+    padding-right: 5px;
+}
+#tblCreateOrders  tbody tr td a{
+    padding-right: 5px;
+}
+
+.side-nav li.menu.active {
+  background-color: #22262e;
+}
+
+.side-nav ul .sub-menu li.active a,
+.side-nav li .sub-menu li.active a {
+  color: #bcb811;
+}
+
+.side-nav ul .sub-menu li a:hover,
+.side-nav li .sub-menu li a:hover {
+  color: #bcb811;
+}
+
+.eks-table{
+    padding-top: 20px;
+}
+
+.nav-tabs {
+    border-bottom: 2px solid #337ab7;
+}
+
+.eks-inner-table{
+    border-spacing: 20px 0px;
+    border-collapse: separate
+}
+
+.eks-btn-back{
+    padding: 10px 5px;
+}
+
+.eks-hruler{
+    border-top: 2px solid #337ab7;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+/*.btn-primary{
+    background-color: #0c5fe5;
+}
+
+.btn-primary:hover{
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    background-color: #0c5fe5;
+    border-color: #0c5fe5;
+}*/
+
+.btn-success{
+    background-color: #6fbc11;
+}
+
+.eks-center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.eks-error-success-alert {
+    z-index: 99 !important;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}

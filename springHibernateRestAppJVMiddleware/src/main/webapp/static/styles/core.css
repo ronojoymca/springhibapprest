@@ -1,0 +1,48 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url(../images/background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color:#464646;
+  height: 100%;
+}
+
+/* For mobile devices */
+/*@media only screen and (max-width: 767px) {
+  body {
+	background-image: url(images/background_mobile.jpg);
+  }
+}*/
+
+.navbar.eks-flat-corner {
+	border-radius: 0px;
+}
+
+.eks-center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.eks-login-panel{
+	background-color: rgba(255,255,255,0.2);
+	border: transparent;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+	color: #f88640;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+	color: #f88640;
+	cursor: default;
+	background-color: transparent;
+	border: none;
+	border-bottom-color: transparent;
+}

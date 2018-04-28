@@ -1,0 +1,102 @@
+.eks-dashboard{
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.eks-text-highlight{
+    color: #f88640;
+}
+
+.eks-hline{
+    margin-top: 41px;
+    border-top: 2px solid #337ab7;
+}
+
+.eks-overview-icon{
+    display: inline-block;
+    background: url(../images/overview.svg);
+    width: 22px;
+    height: 22px;
+    background-size: cover;
+}
+
+.eks-survey-report{
+    display: inline-block;
+    background: url(../images/surveyReport.svg);
+    width: 22px;
+    height: 22px;
+    background-size: cover;
+}
+
+.eks-survey-title{
+    margin-top: 0px;
+    color: black;
+}
+
+.eks-survey-action-list-grp{
+    margin:0px;
+}
+
+.list-group-item.eks-survey-action-item{
+    display: inline-block;
+    border: none;
+    color: #337ab7;
+    font-weight: bold;
+}
+
+.table-hover>tbody>tr.eks-survey-action-row:hover{
+   background-color: #ffffff;
+   cursor: initial;
+}
+
+.eks-survey-action-icon{
+    margin-right: 5px;
+}
+
+.eks-label{
+    font-size: 16px;
+    margin-top: 0px;
+}
+
+.eks-panel{
+    background-color: #348fde;
+}
+
+.eks-row{
+    padding: 10px;
+}
+
+.eks-modal{
+    position: relative;
+    display: flex;
+}
+
+.eks-list-no-bullet{
+    list-style-type: none;
+}
+
+a.eks-modal-link:focus, a.eks-modal-link:hover{
+    color: #f88640;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.eks-col-no-padding{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.eks-question-background{
+    background-color: #f8f8f8;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.eks-question-remove-icon{
+    cursor: pointer;
+}
+
+.table-hover>tbody>tr:hover {
+    cursor: pointer;
+}
